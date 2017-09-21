@@ -200,10 +200,12 @@ public class Greenhouse implements IGreenhouse, ICommands
         conn.addMessage(mess);
         if (conn.send())
         {
-            if (mess.getResultData() != null)
+            if (mess.getResultData() != null){
+                System.out.println(mess.getResultData()[0]);
                 temp2 = (double) (mess.getResultData())[0];
-            else
+            } else {
                 temp2 =  19.99; // return a dummy value
+            }
         }
         System.out.println("Temperature is: " + temp2);
         return temp2 + 273.0;
