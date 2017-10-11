@@ -6,6 +6,7 @@
 
 package GreenhouseAPI;
 
+import API.IGreenhouse;
 import PLCCommunication.*;
 import java.util.BitSet;
 
