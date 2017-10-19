@@ -35,17 +35,16 @@ public class TestGreenhouse
 //                api.SetBlueLight(i);
 //            }
 //        }
-//        api.SetRedLight(50);
-//        api.SetBlueLight(100);
-//        api.SetTemperature(273 + 25);
-//        api.SetFanSpeed(2);
-//        api.SetBlueLight(100);                      // bit 4
-//        api.AddWater(3);                            // bit 6
-//        api.ReadTemp2();                            // bit 10
-        // bit 16
-//        api.SetTemperature(300);                    // bit 1
-//        double outdoorTemperature;
-        while (true)
+        api.SetRedLight(50);
+        api.SetBlueLight(100);
+        api.SetTemperature(273 + 25);
+        api.SetFanSpeed(2);
+        api.SetBlueLight(100);                      // bit 4
+        api.AddWater(3);                            // bit 6
+        api.ReadTemp2();                            // bit 10
+        api.SetTemperature(300);                    // bit 1
+        double outdoorTemperature;
+        //while (true)
             api.SetFanSpeed(1);
 //           outdoorTemperature = api.ReadTemp1();    // bit 9
         
